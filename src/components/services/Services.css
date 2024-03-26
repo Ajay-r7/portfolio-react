@@ -1,0 +1,138 @@
+.head1{
+    
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: -60px;
+}
+.head1::before{
+    content: "";
+    width:10.2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+}
+
+.services-container{
+
+    
+    justify-content: center;
+    column-gap: 1.8rem;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    display: flex;
+}
+
+.services-content{
+    position: relative;
+    background-color: transparent;
+    outline: 1.5px solid #a993fe;
+    width: 200px;
+    padding: 5rem 0 2rem 2.5rem;
+    border-radius: 1.25rem;
+}
+.services-icon{
+    display: block;
+    font-size: 1.5rem;
+    color: #7e61e7;
+}
+.services-title{
+    font-size: x-large;
+    margin: 15px 0px;
+}
+
+.services-button{
+    color: rgb(223, 190, 253);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
+}
+
+.services-button-icon{
+    transition: all 0.3s;
+}
+.services-button:hover .services-button-icon{
+    transform: translateX(00.25rem);
+}
+
+.services-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.262);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.services-modal-content{
+    width: 50%;
+    height: 70%;
+    position: relative;
+    background-color: #7904b3;
+    padding: 2rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.services-modal-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.services-modal-title,.services-modal-description{
+    text-align: center;
+}
+
+.services-modal-title{
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.services-modal-description{
+    font-size: medium;
+    font-weight: 500;
+    padding: 0 3.5rem;
+    margin-bottom: 15px;
+    color: rgb(230, 230, 230);
+
+}
+
+.services-modal-services{
+    row-gap: 0.75rem;
+    
+}
+.services-modal-service{
+    display: flex;
+   margin-left: 40px;
+   font-size: smaller;
+    column-gap: .5rem;
+    color: rgb(186, 186, 186);
+}
+.services-modal-icon{
+    color: aquamarine;
+    font-size: 1.1rem;
+}
+
+.services-modal-info{
+font-size: small;
+}
+
+/* active modal */
+
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}

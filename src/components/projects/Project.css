@@ -1,0 +1,39 @@
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.project-item{
+    background-color: rgb(83, 6, 156);
+    padding: 1.2rem;
+    transition: all 0.3s;
+    
+}
+.project-item:hover{
+    border: none;
+    outline: 1.5px solid #a993fe;
+    background-color: transparent;
+    padding: .25rem;
+}
+.project-item h3{
+    margin-top: 1.2rem;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project-item a{
+    justify-content: center;
+    margin-top: -6px;
+    margin-left: 15px;
+}
+.btn2{
+    text-decoration: none;
+    color: white;
+    border: none;
+    outline: 1.5px solid #a993fe;
+    padding: .25rem;
+    border-radius: 0.2rem;
+}
