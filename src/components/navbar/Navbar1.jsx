@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar1.css'
+import { Link } from 'react-scroll'
 
 const Navbar1 = () => {
   return (
@@ -9,19 +10,19 @@ const Navbar1 = () => {
             <h3 className='ms-3'>Port<span style={{color:'blueviolet'}}>folio.</span></h3>
             <ul>
                 <li>
-                    <a href='#home' className="menu-item">Home</a>
+                    <Link to="home" spy={true} smooth={true} offset={50} duration={500} className="menu-item">Home</Link>
                 </li>
                 <li>
-                    <a href='#skills' className="menu-item">Skills</a>
+                    <Link to="skills" spy={true} smooth={true} offset={50} duration={500} className="menu-item">Skills</Link>
                 </li>
                 <li>
-                    <a href='#services' className="menu-item">Services</a>
+                    <Link to="services" spy={true} smooth={true} offset={50} duration={500} className="menu-item">Services</Link>
                 </li>
                 <li>
-                    <a href='#project' className="menu-item">Projects</a>
+                    <Link to="project" spy={true} smooth={true} offset={50} duration={500} className="menu-item">Projects</Link>
                 </li>
                 <li>
-                    <a href='#contactme' className="menu-item">Contact Me</a>
+                    <Link to="contactme" spy={true} smooth={true} offset={50} duration={500} className="menu-item">Contact Me</Link>
                 </li>
 
                 <button className="contact-btn me-3" onClick={()=>{}}>Hire Me</button>

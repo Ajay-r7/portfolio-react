@@ -5,7 +5,9 @@
     background-color: var(--body-color);
     color: var(--text-color);
   }
-  
+  html{
+    scroll-behavior: smooth;
+}
  
   
   ul {

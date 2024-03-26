@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 const Data = () => {
   return (
@@ -7,7 +8,7 @@ const Data = () => {
         <h3 className="home-subtitle">Frontend Developer</h3>
         <p className="description">Passionated Frontend Developer|Transforming Ideas into Seamless and Visually Web Solution</p>
 
-        <a href="#contactme" className="btn" >Say Hello<i class="fa-regular fa-paper-plane ms-2"></i></a>
+        <Link to="contactme" spy={true} smooth={true} offset={50} duration={500} className="btn" >Say Hello<i class="fa-regular fa-paper-plane ms-2"></i></Link>
     </div>
   )
 }
